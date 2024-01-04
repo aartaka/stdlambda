@@ -1,0 +1,27 @@
+These a Justine Tunney lambda terms from https://justine.lol/lambda/
+that I haven't decyphered and incorporated yet. Lots of omega
+combinators somewhy.
+
+min =
+λabcd.a(λef.fe)(λe.d)(b(λef.c(fe))(λe.d))
+"λλλλ [[[3 λλ [0 1]] λ1] [[2 λλ [3 [0 1]]] λ1]]"
+
+all = λa.(λb.b b)(λbc.c (λde.e) (b b))
+none = λa.(λb.b b)(λbc.c (λde.d) (b b))
+
+even = λa.(λb.b b) (λbc.c (λde.e) (λd.d (λef.e) (b b)))
+odd =
+λa.(λb.bb)(λbc.c(λde.d)(λd.d(λef.f)(bb)))
+"λ [λ [0 0] λλ [[0 λλ 1] λ [[0 λλ 0] [2 2]]]]"
+
+div =
+λabcd.a(λef.fe)(λe.d)(a(λe.b(λfg.gf)(λf.c(fe))(λf.f))d)
+"λλλλ [[[3 λλ [0 1]] λ 1] [[3 λ [[[3 λλ [0 1]] λ [3 [0 1]]] λ0]] 0]]"
+
+mod =
+λabcd.a(λe.e(λfg.f))(a(λe.b(λfgh.h(f(cg))g)(λf.e)d)(λe.d))(λef.f)
+"λλλλ [[[3 $cdr] [[3 λ [[[3 λλλ [[0 [2 [5 1]]] 1]] λ1] 1]] λ1]] λλ0]"
+
+divides =
+λab.a(λc.c(λde.d))((λc.cc)(λc.b(λdef.f(d(λgh.h))e)(λd.cc)(λde.d)))(λcd.d)
+"λλ [[[1 $cdr] [$omega λ[[[1 λλλ [[0 [2 λλ0]] 1]] λ[1 1]] λλ1]]] λλ0]"
