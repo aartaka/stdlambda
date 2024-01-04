@@ -32,42 +32,41 @@ Sources of inspiration and code:
   (fac 5)
 #+end_src
 
-
 * Plans:
-- Justine's functions
+- Justine's functions (justine.txt)
 - Functions from https://hackage.haskell.org/package/base-4.19.0.0/docs/Data-List.html:
-  - last + init
-  - foldl?
-  - scan
-  - repeat, replicate
-  - take, drop, splitAt
-  - span, break
-  - isPrefixOf, isSuffixOf, isInfixOf, isSubsequenceOf
-  - find
+  - ~last~ + ~init~
+  - ~foldl~?
+  - ~scan~
+  - ~repeat~, ~replicate~
+  - ~take~, ~drop~, ~splitAt~
+  - ~span~, ~break~
+  - ~isPrefixOf~, ~isSuffixOf~, ~isInfixOf~, ~isSubsequenceOf~
+  - ~find~
 - SRFI 1:
-  - c(a|d)+r
-  - first etc
-  - delete
-  - copy
-  - list-eq
-  - (un)zip
-  - count
-  - partition
+  - ~c(a|d)+r~
+  - ~first~ etc
+  - ~delete~
+  - ~copy~
+  - ~list-eq~
+  - ~(un)zip~
+  - ~count~
+  - ~partition~
 - Associative lists
 - Strings (use cons?)
 - Set operations (use cons?)
- - lset<=
- - lset=
- - lset-adjoin
- - lset-union
- - lset-intersection
- - lset-difference
- - lset-xor
- - lset-diff+intersection
- - lset-union!
- - lset-intersection!
- - lset-difference!
- - lset-xor!
- - lset-diff+intersection!
+ - ~lset<=~
+ - ~lset=~
+ - ~lset-adjoin~
+ - ~lset-union~
+ - ~lset-intersection~
+ - ~lset-difference~
+ - ~lset-xor~
+ - ~lset-diff+intersection~
+ - ~lset-union!~
+ - ~lset-intersection!~
+ - ~lset-difference!~
+ - ~lset-xor!~
+ - ~lset-diff+intersection!~
 - Merge sort?
 - Arithmetic operators like +, -, / etc. as aliases for respective functions.
