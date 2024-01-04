@@ -1,0 +1,64 @@
+#+TITLE:stdlambda—Standard Library for Lamdba Calculus
+
+Lambda Calculus is an inspiring idea, but most of the resources about
+it list just a couple of utilities and ways to encode data, without
+getting deep enough into building a _practical_ set of
+primitives. ~stdlambda~ tries to do just that: provide a more or less
+practical set of primitives for programming in Lambda
+Calculus. Included are:
+- Frequent combinators like ~S~, ~K~, ~I~, and ~Y~.
+- Church Booleans and all the possible logical operations on them.
+- Church Numerals and arithmetics on them.
+  - List-encoded numerals might be provided in the future.
+- Church Pairs (with an opinionated ~nil = false~) and Haskell/Lisp-inspired utilities on them.
+  - nil = ~λx.true~ pairs might be provided in the future.
+
+Sources of inspiration and code:
+- [[http://www.golfscript.com/lam/][Universal Lambda page]].
+- Justine Tunney's [[https://justine.lol/lambda/][SectorLambda page]].
+- Hikaru Ikuta's [[https://github.com/woodrush/lambdacraft][Lambdacraft]]
+
+The load order and dependencies of files are:
+- combinators.lambda (no deps)
+- bool.lambda (no deps)
+- numbers.lambda (depends on combinators.lambda and bool.lambda)
+- cons.lambda (depends on combinators.lambda and bool.lambda)
+
+Plans:
+- Justine's functions
+- Functions from https://hackage.haskell.org/package/base-4.19.0.0/docs/Data-List.html:
+  - last + init
+  - foldl?
+  - scan
+  - repeat, replicate
+  - take, drop, splitAt
+  - span, break
+  - isPrefixOf, isSuffixOf, isInfixOf, isSubsequenceOf
+  - find
+- SRFI 1:
+  - c(a|d)+r
+  - first etc
+  - delete
+  - copy
+  - list-eq
+  - (un)zip
+  - count
+  - partition
+- Associative lists
+- Strings (use cons?)
+- Set operations (use cons?)
+ - lset<=
+ - lset=
+ - lset-adjoin
+ - lset-union
+ - lset-intersection
+ - lset-difference
+ - lset-xor
+ - lset-diff+intersection
+ - lset-union!
+ - lset-intersection!
+ - lset-difference!
+ - lset-xor!
+ - lset-diff+intersection!
+- Merge sort?
+- Arithmetic operators like +, -, / etc. as aliases for respective functions.

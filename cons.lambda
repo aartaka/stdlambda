@@ -1,0 +1,40 @@
+nil = false
+pair = λx.λy.λf.f x y
+cons = pair
+first = λp.p true
+head = first
+car = first
+rest = λp.p false
+tail = rest
+cdr = rest
+null = λp.p (λh.λt.λx.false) true
+
+nth = λn.λl.car (n cdr) l
+
+singleton = λe.(cons e nil)
+foldr = λf.λi.Y (λr.λl.l (λh.λt.λi.f h (r t)) i)
+map = λf.λl.foldr (λe.λa.cons (f e) a) nil l
+concat = λa.λb.foldr cons b a
+append = concat
+rcons = λa.λb.concat a (cons b nil)
+concatmap = λf.λl.foldr concat nil (map f l)
+mapconcat = concatmap
+mappend = concatmap
+length = λl.foldr (λe.λa.succ(a)) 0 l
+filter = λf.λl.foldr (λe.λa.(f e) (cons e a) a) nil l
+remove = filter
+
+some = λf.λl.foldr or false (map f l)
+any = some
+all = λf.λl.foldr and true (map f l)
+every = all
+none = λf.λl.(not (some f l))
+
+replicate = λn.λe.Y (λr.λn.(iszero(n) nil (cons e (r (pred n))))) n
+repeat = replicate
+reverse = λl.l (ω (λr.λh.λt.λe.t (r r) (λc.c h e))) nil
+find = λi.λc.λl.foldr (λe.λa.(or a (c e i)))
+mem = find
+
+unfoldr = λf.λi.λt.Y (λr.λx.(t x) nil (cons x (r (f x)))) i
+iota = λx.unfoldr succ 0 (eq x)

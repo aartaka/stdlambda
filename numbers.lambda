@@ -1,0 +1,23 @@
+0 = false
+
+succ = λn.λf.λx.f (n f x)
+plus = λm.λn.λf.λx.m f (n f x)
+mult = λm.λn.λf.m (n f)
+pow = λb.λe.e b
+pred = λn.λf.λx.n (λg.λh.h (g f)) (λu.x) (λu.u)
+sub = λm.λn.n pred m
+
+iszero = λn.n (λx.false) true
+is0 = iszero
+zerop = iszero
+leq = λm.λn.iszero (sub bm n)
+eq = λm.λn.and (leq m n) (leq n m)
+lt = λm.λn.leq (succ m) n
+gt = λm.λn.not (leq m n)
+geq = λm.λn.leq n m
+
+min = λm.λn.(lt m n) m n
+max = λm.λn.(lt m n) n m
+
+even = λn.n not true
+odd = λn.n not false

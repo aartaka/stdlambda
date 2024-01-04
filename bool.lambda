@@ -1,0 +1,13 @@
+true = λf.λx.f
+false = λf.λx.x
+not = λp.p false true
+and = λp.λq.p q p
+or = λp.λq.p p q
+xor = λp.λq.p (not q) q
+nand = λp.λq.(not (and p q))
+nor = λp.λq.(not (or p q))
+xnor = λp.λq.(not (xor p q))
+mux = λp.λq.λs.(or (and p (not s)) (and q s))
+imply = λp.λq.(or (not p) q)
+ifthenelse = λb.λt.λe.b t e
+if = λb.λt.λe.b t e

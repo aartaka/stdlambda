@@ -1,0 +1,13 @@
+I = λx.x
+S = λx.λy.λz.x z (y z)
+K = λx.λy.x
+B = λx.λy.λz.x (y z)
+C = λx.λy.λz.x z y
+W = λx.λy.x y y
+ω = λx.x x
+Δ = ω
+U = ω
+Ω = ω ω
+Y = λg.(λx.g (x x)) (λx.g (x x))
+Z = λf.((λx.(f λy.(x x y))) (λx.(f λy.(x x y))))
+Θ = (λq.q q) (λx.λy.(y (x x y)))
