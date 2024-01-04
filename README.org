@@ -18,13 +18,22 @@ Sources of inspiration and code:
 - Justine Tunney's [[https://justine.lol/lambda/][SectorLambda page]].
 - Hikaru Ikuta's [[https://github.com/woodrush/lambdacraft][Lambdacraft]]
 
-The load order and dependencies of files are:
-- combinators.lambda (no deps)
-- bool.lambda (no deps)
-- numbers.lambda (depends on combinators.lambda and bool.lambda)
-- cons.lambda (depends on combinators.lambda and bool.lambda)
+* Getting Started
 
-Plans:
+- Feed the definitions from provided files into your Lambda Calculus
+  interpreter. The load order and dependencies of files are:
+  - combinators.lambda (no deps)
+  - bool.lambda (no deps)
+  - numbers.lambda (depends on combinators.lambda and bool.lambda)
+  - cons.lambda (depends on combinators.lambda and bool.lambda)
+- Run the code using these primitives. Say
+#+begin_src lisp
+  fac = Y λr.λn.(if (zerop n) 1 (mult n (r (pred n))))
+  (fac 5)
+#+end_src
+
+
+* Plans:
 - Justine's functions
 - Functions from https://hackage.haskell.org/package/base-4.19.0.0/docs/Data-List.html:
   - last + init
