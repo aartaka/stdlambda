@@ -22,13 +22,13 @@ Sources of inspiration and code:
 
 - Feed the definitions from provided files into your Lambda Calculus
   interpreter. The load order and dependencies of files are:
-  - combinators.lambda (no deps)
-  - bool.lambda (no deps)
-  - numbers.lambda (depends on combinators.lambda and bool.lambda)
-  - cons.lambda (depends on combinators.lambda and bool.lambda)
+  - ~combinators.lambda~ (no deps)
+  - ~bool.lambda~ (no deps)
+  - ~numbers.lambda~ (depends on combinators.lambda and bool.lambda)
+  - ~cons.lambda~ (depends on combinators.lambda and bool.lambda)
 - Run the code using these primitives. Say
 #+begin_src lisp
-  fac = Y λr.λn.(if (zerop n) 1 (mult n (r (pred n))))
+  fac = Y λr.λn.(if (=0 n) 1 (× n (r (1- n))))
   (fac 5)
 #+end_src
 
