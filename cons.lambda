@@ -7,7 +7,7 @@ null = λp.p (λh.λt.λx.false) true
 nth = λn.λl.car (n cdr) l
 
 singleton = λe.(cons e nil)
-foldr = λf.λi.Y (λr.λl.l (λh.λt.λi.f h (r t)) i)
+foldr = λf.λi.λl.Y (λr.λl.l (λh.λt.λi.f h (r t)) i) l
 map = λf.λl.foldr (λe.λa.cons (f e) a) nil l
 concat = λa.λb.foldr cons b a
 rcons = λa.λb.concat a (cons b nil)
