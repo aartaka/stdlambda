@@ -21,7 +21,7 @@ none = λf.λl.(not (some f l))
 
 replicate = λn.λe.Y (λr.λn.(iszero(n) nil (cons e (r (pred n))))) n
 reverse = λl.l (ω (λr.λh.λt.λe.t (r r) (λc.c h e))) nil
-find = λi.λc.λl.foldr (λe.λa.(or a (c e i)))
+find = λt.λl.foldr (λe.λa.(or a (t e))) l
 
 unfoldr = λf.λi.λt.Y (λr.λx.(t x) nil (cons x (r (f x)))) i
 iota = λx.unfoldr succ 0 (eq x)
