@@ -2,7 +2,9 @@
 U = ω
 
 ⊤ = true
+T = true
 ⊥ = false
+F = false
 ∧ = and
 ∨ = or
 ¬ = not
