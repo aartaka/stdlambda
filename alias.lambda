@@ -28,6 +28,7 @@ remove = filter
 any = some
 every = all
 repeat = replicate
+mem = find
 
 1+ = succ
 ++ = succ
