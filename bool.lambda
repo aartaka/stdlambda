@@ -11,3 +11,5 @@ mux = λp.λq.λs.(or (and p (not s)) (and q s))
 impl = λp.λq.(or (not p) q)
 ifthenelse = λb.λt.λe.b t e
 if = λb.λt.λe.b t e
+conjoin = λa.λb.λx.(and (a x) (b x))
+disjoin = λa.λb.λx.(or (a x) (b x))
