@@ -3,25 +3,5 @@ cons = λx.λy.λf.f x y
 car = λp.p true
 cdr = λp.p false
 null = λp.p (λh.λt.λx.false) true
-
 nth = λn.λl.car (n cdr) l
-
 singleton = λe.(cons e nil)
-foldr = λf.λi.λl.Y (λr.λl.l (λh.λt.λi.f h (r t)) i) l
-map = λf.λl.foldr (λe.λa.cons (f e) a) nil l
-concat = λa.λb.foldr cons b a
-rcons = λa.λb.concat a (cons b nil)
-concatmap = λf.λl.foldr concat nil (map f l)
-length = λl.foldr (λe.λa.succ(a)) 0 l
-filter = λf.λl.foldr (λe.λa.(f e) (cons e a) a) nil l
-
-some = λf.λl.foldr or false (map f l)
-all = λf.λl.foldr and true (map f l)
-none = λf.λl.(not (some f l))
-
-replicate = λn.λe.Y (λr.λn.(iszero(n) nil (cons e (r (pred n))))) n
-reverse = λl.foldr (C rcons) nil l
-find = λp.λl.foldr (λe.λa.(p e) e a) nil l
-
-unfoldr = λf.λi.λt.Y (λr.λx.(t x) nil (cons x (r (f x)))) i
-iota = λx.unfoldr succ 0 (eq x)
