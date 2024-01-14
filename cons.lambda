@@ -3,5 +3,6 @@ cons = λx.λy.λf.f x y
 car = λp.p true
 cdr = λp.p false
 null = λp.p (λh.λt.λx.false) true
-nth = λn.λl.car (n cdr) l
+nthcdr = λn.λl.(n cdr) l
+nth = λn.λl.car (nthcdr l)
 singleton = λe.(cons e nil)
