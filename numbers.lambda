@@ -14,7 +14,7 @@ lt = λm.λn.leq (succ m) n
 gt = λm.λn.not (leq m n)
 geq = λm.λn.leq n m
 
-div = λn.λd.Y (λr.λq.(lt q d) 0 (succ (r (sub q d))))
+div = λn.λd.Y (λr.λq.(lt q d) 0 (succ (r (sub q d)))) n
 mod = λn.λd.(sub n (mult d (div n d)))
 
 min = λm.λn.(lt m n) m n
