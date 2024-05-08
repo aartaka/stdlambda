@@ -8,7 +8,7 @@ pred = λn.λf.λx.n (λg.λh.h (g f)) (λu.x) (λu.u)
 sub = λm.λn.n pred m
 
 iszero = λn.n (λx.false) true
-leq = λm.λn.iszero (sub bm n)
+leq = λm.λn.iszero (sub m n)
 eq = λm.λn.and (leq m n) (leq n m)
 lt = λm.λn.leq (succ m) n
 gt = λm.λn.not (leq m n)
