@@ -62,3 +62,4 @@ snatch = poke
 spin = flip
 dup = ω
 peek = over
+unit = singleton

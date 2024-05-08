@@ -15,7 +15,6 @@ unfoldr = λf.λi.λt.Y (λr.λx.(t x) nil (cons x (r (f x)))) i
 iota = λn.unfoldr succ 0 (eq n)
 mapiota = λf.λn.map f (iota n)
 
-unit = λx.(cons x nil)
 dip = λx.λl.(nth 0 l) x
 rep = λl.(nth 0 l) (nth 0 l)
 run = λl.(nth 0 l) l
