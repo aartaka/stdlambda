@@ -1,0 +1,8 @@
+rot = λa.λb.λc.b c a
+-rot = λa.λb.λc.c a b
+poke = λa.λb.λc.b a
+roll = λa.λb.λc.λd.b c d a
+-roll = λa.λb.λc.λd.d a b c
+flip = λa.λb.λc.c b a
+over = λa.λb.a b a
+tuck = λa.λb.b a b
