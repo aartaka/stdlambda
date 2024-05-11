@@ -14,8 +14,8 @@ find = λp.λl.foldr (λe.λa.(p e) e a) nil l
 unfoldr = λf.λi.λt.Y (λr.λx.(t x) nil (cons x (r (f x)))) i
 iota = λn.unfoldr succ 0 (eq n)
 mapiota = λf.λn.map f (iota n)
-last = Y (λr.λl.if (null (cdr l)) (car l) (r (cdr l)))
-butlast = Y (λr.λl.if (null (cdr l)) nil (cons (car l) (r (cdr l))))
+last = λl.Y (λr.λl.if (null (cdr l)) (car l) (r (cdr l))) l
+butlast = λl.Y (λr.λl.if (null (cdr l)) nil (cons (car l) (r (cdr l)))) l
 rotatel = λl.concat (cdr l) (singleton (car l))
 rotater = λl.concat (last l) (butlast l)
 
