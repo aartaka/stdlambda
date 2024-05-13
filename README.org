@@ -19,14 +19,13 @@ Sources of inspiration and code:
 - Hikaru Ikuta's [[https://github.com/woodrush/lambdacraft][Lambdacraft]]
 
 * Getting Started
-
 - Feed the definitions from provided files into your Lambda Calculus
   interpreter. The files (and their interdependencies) are:
-  - ~combinators.lambda~ :: Logical combinators, no deps.
+  - ~combinators.lambda~ :: Logical/stack combinators, no deps.
   - ~bool.lambda~ :: Boolean ops, no deps.
   - ~numbers.lambda~ :: Numeric, arithmetics. Depends on ~combinators.lambda~ and ~bool.lambda~.
-  - ~cons.lambda~ :: Conses. Depends on bool.lambda.
-  - ~list.lambda~ :: Linked lists and utils for them. Mostly fold operations. Depends on cons.lambda and combinators.lambda.
+  - ~cons.lambda~ :: Conses. Depends on ~bool.lambda~.
+  - ~list.lambda~ :: Linked lists and utils for them. Mostly fold operations. Depends on ~cons.lambda~ and ~combinators.lambda~.
   - ~stack.lambda~ :: Operations/combinators from stack languages. Depends on Depends on ~combinators.lambda~ and ~bool.lambda~.
   - ~alias.lambda~ :: Aliases for all of the above.
 - Run the code using these primitives. Say
@@ -34,3 +33,10 @@ Sources of inspiration and code:
   fac = Y λr.λn.(if (=0 n) 1 (× n (r (1- n))))
   (fac 5)
 #+end_src
+
+* Format
+The format is the single-letter single-argument lambdas. The approximate regex would be:
+#+begin_src
+.* = (λ[a-z].)*.*
+#+end_src
+
