@@ -1,4 +1,13 @@
 0 = false
+1 = λf.λx.f x
+2 = λf.λx.f (f x)
+3 = λf.λx.f (f (f x))
+4 = λf.λx.f (f (f (f x)))
+5 = λf.λx.f (f (f (f (f x))))
+6 = λf.λx.f (f (f (f (f (f x)))))
+7 = λf.λx.f (f (f (f (f (f (f x))))))
+8 = λf.λx.f (f (f (f (f (f (f (f x)))))))
+9 = λf.λx.f (f (f (f (f (f (f (f (f x))))))))
 
 succ = λn.λf.λx.f (n f x)
 plus = λm.λn.λf.λx.m f (n f x)
