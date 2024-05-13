@@ -25,8 +25,8 @@ Sources of inspiration and code:
   - ~bool.lambda~ :: Boolean ops, no deps.
   - ~numbers.lambda~ :: Numeric, arithmetics. Depends on ~combinators.lambda~ and ~bool.lambda~.
   - ~cons.lambda~ :: Conses. Depends on ~bool.lambda~.
-  - ~list.lambda~ :: Linked lists and utils for them. Mostly fold operations. Depends on ~cons.lambda~ and ~combinators.lambda~.
-  - ~stack.lambda~ :: Operations/combinators from stack languages. Depends on Depends on ~combinators.lambda~ and ~bool.lambda~.
+  - ~list.lambda~ :: Linked lists and utils for them. Mostly fold operations. Depends on ~cons.lambda~, ~numbers.lambda~ and ~combinators.lambda~.
+  - ~stack.lambda~ :: Operations/combinators from stack languages.
   - ~alias.lambda~ :: Aliases for all of the above.
 - Run the code using these primitives. Say
 #+begin_src lisp
