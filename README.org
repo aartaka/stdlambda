@@ -39,4 +39,13 @@ The format is the single-letter single-argument lambdas. The approximate regex w
 #+begin_src
 .* = (λ[a-z].)*.*
 #+end_src
-
+Not all function applications are enclosed into parentheses and not all applications are single-argument. Example:
+#+begin_src 
+first = compose car (0 cdr)
+#+end_src
+and not
+#+begin_src 
+first = ((compose car) (0 cdr))
+#+end_src
+It's too much work to maintain such a code.
+I might reconsider that in the future, though.
