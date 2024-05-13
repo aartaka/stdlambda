@@ -23,3 +23,14 @@ dip = λx.λl.(nth 0 l) x
 rep = λl.(nth 0 l) (nth 0 l)
 run = λl.(nth 0 l) l
 sap = λa.λb.(nth 0 b) (nth 0 a)
+
+first = compose car (0 cdr)
+second = compose car (1 cdr)
+third = compose car (2 cdr)
+fourth = compose car (3 cdr)
+fifth = compose car (4 cdr)
+sixth = compose car (5 cdr)
+seventh = compose car (6 cdr)
+eighth = compose car (7 cdr)
+ninth = compose car (8 cdr)
+tenth = compose car (9 cdr)
