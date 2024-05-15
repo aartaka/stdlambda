@@ -31,7 +31,6 @@ F = false
 
 pair = cons
 head = car
-first = car
 tail = cdr
 rest = cdr
 append = concat
