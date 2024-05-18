@@ -62,14 +62,3 @@ zerop = iszero
 > = gt
 ≥ = geq
 >= = geq
-
-drop = true
-zap = true
-nip = false
-dig = rot
-bury = -rot
-snatch = poke
-spin = flip
-dup = ω
-peek = over
-unit = singleton

@@ -1,8 +1,0 @@
-rot = λa.λb.λc.λx.b (c (a x))
--rot = λa.λb.λc.λx.c (a (b x))
-poke = λa.λb.λc.λx.b (a x)
-roll = λa.λb.λc.λd.λx.b (c (d (a x)))
--roll = λa.λb.λc.λd.λx.d (a (b (c x)))
-flip = λa.λb.λc.λx.c (b (a x))
-over = λa.λb.λx.a (b (a x))
-tuck = λa.λb.λx.b (a (b x))
