@@ -13,6 +13,7 @@ nine = 9
 U = ω
 M = ω
 V = cons
+compose = B
 
 ⊤ = true
 T = true
