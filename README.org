@@ -50,3 +50,9 @@ first = ((compose car) (0 cdr))
 #+end_src
 It's too much work to maintain such a code.
 I might reconsider that in the future, though.
+
+* Acknowledgements
+- Many logical combinators come from [[https://wiki.xxiivv.com/site/logic][Devine Lu Linvega logic page]].
+- Lists (and ~foldr~ especially) come from the [[http://www.golfscript.com/lam/][Golfscript Universal Lambda page]].
+- Many list primitives and names for things come from Common Lisp and Scheme.
+  - Things like ~conjoin~ and ~compose~ especially come from Alexandria library.
