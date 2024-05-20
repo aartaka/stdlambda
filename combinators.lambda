@@ -16,3 +16,4 @@ W = λx.λy.x y y
 Y = λg.(λx.g (x x)) (λx.g (x x))
 Z = λf.((λx.(f λy.(x x y))) (λx.(f λy.(x x y))))
 Θ = (λq.q q) (λx.λy.(y (x x y)))
+ι = λf.((f S) K)
