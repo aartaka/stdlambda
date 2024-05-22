@@ -14,11 +14,11 @@ U = ω
 M = ω
 V = cons
 compose = B
+ε = T
+o = B
 
 ⊤ = true
-T = true
 ⊥ = false
-F = false
 ∧ = and
 ∨ = or
 ¬ = not
@@ -31,6 +31,11 @@ F = false
 ↑ = nand
 | = nand
 ⇒ = impl
+Ɔ = impl
+⟹ = impl
+⊃ = impl
+⬄ = xnor
+
 
 pair = cons
 head = car
