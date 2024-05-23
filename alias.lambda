@@ -28,6 +28,11 @@ o = B
 ⊽ = nor
 ↓ = nor
 ⊙ = xnor
+<-> = xnor
+↔ = xnor
+⇔ = xnor
+⬄ = xnor
+⟺ = xnor
 ⊼ = nand
 ↑ = nand
 | = nand
@@ -35,8 +40,6 @@ o = B
 Ɔ = impl
 ⟹ = impl
 ⊃ = impl
-⬄ = xnor
-
 
 pair = cons
 head = car
@@ -50,9 +53,12 @@ any = some
 every = all
 repeat = replicate
 mem = find
+unit = singleton
 
 1+ = succ
 ++ = succ
+incf = succ
+inc = succ
 + = plus
 * = mult
 × = mult
@@ -60,13 +66,17 @@ mem = find
 ** = pow
 1- = pred
 -- = pred
+decf = pred
+dec = pred
 - = sub
 is0 = iszero
 zerop = iszero
+zero? = iszero
 =0 = iszero
 ≤ = leq
 <= = leq
 = = eq
+≡ = eq
 < = lt
 > = gt
 ≥ = geq
