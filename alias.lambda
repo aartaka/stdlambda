@@ -17,6 +17,9 @@ compose = B
 ∘ = B
 ε = T
 o = B
+swap = C
+
+constantly = true
 
 ⊤ = true
 ⊥ = false
