@@ -18,3 +18,7 @@ Y = λg.(λx.g (x x)) (λx.g (x x))
 Z = λf.((λx.(f λy.(x x y))) (λx.(f λy.(x x y))))
 Θ = (λq.q q) (λx.λy.(y (x x y)))
 ι = λf.((f S) K)
+
+tri = λa.λb.λc.λd.λe.a (b e) (c e) (d e)
+dip = λa.λb.λc.λd.a (b c) d
+dupd = λa.λb.λc.a b b c

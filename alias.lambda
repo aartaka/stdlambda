@@ -18,6 +18,10 @@ compose = B
 ε = T
 o = B
 swap = C
+uni = B
+bi = N
+dup = W
+drop = true
 
 constantly = true
 
