@@ -20,6 +20,7 @@ butlast = λl.Y (λr.λl.if (null (cdr l)) nil (cons (car l) (r (cdr l)))) l
 rotatel = λl.rcons (cdr l) (car l)
 rotater = λl.cons (last l) (butlast l)
 take = λn.λl.Y (λr.λl.if (eq n (length l)) l (r (butlast l))) l
+sorted = λl.foldr (λe.λa.(cons (and (car a) (leq e (cdr a))) e)) (cons true (last l)) (butlast l)
 
 dip = λx.λl.(nth 0 l) x
 rep = λl.(nth 0 l) (nth 0 l)
