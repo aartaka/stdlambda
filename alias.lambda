@@ -67,6 +67,7 @@ mem = find
 unit = singleton
 init = butlast
 len = length
+drop = nthcdr
 
 1+ = succ
 ++ = succ
