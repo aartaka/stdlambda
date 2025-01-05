@@ -27,7 +27,6 @@ Sources of inspiration and code:
   - ~cons.lambda~ :: Conses. Depends on ~bool.lambda~.
   - ~list.lambda~ :: Linked lists and utils for them. Mostly fold operations. Depends on ~cons.lambda~, ~numbers.lambda~, ~combinators.lambda~, ~bool.lambda~.
   - ~alist.lambda~ :: Associative (key-value) lists. Depends on ~cons.lambda~ and ~combinators.lambda~.
-  - ~stack.lambda~ :: Operations/combinators from stack languages.
   - ~alias.lambda~ :: Aliases for all of the above.
 - Run the code using these primitives. Say
 #+begin_src lisp
