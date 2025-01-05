@@ -18,7 +18,7 @@ mapiota = λf.λn.map f (iota n)
 last = λl.Y (λr.λl.if (null (cdr l)) (car l) (r (cdr l))) l
 butlast = λl.Y (λr.λl.if (null (cdr l)) nil (cons (car l) (r (cdr l)))) l
 rotatel = λl.rcons (cdr l) (car l)
-rotater = λl.concat (last l) (butlast l)
+rotater = λl.cons (last l) (butlast l)
 
 dip = λx.λl.(nth 0 l) x
 rep = λl.(nth 0 l) (nth 0 l)
