@@ -1,3 +1,4 @@
 acons = λk.λv.λa.cons (cons k v) a
 assoc = λp.λa.Y (λr.λl.l (λh.λt.λf.(p (car h)) h (r t)) false) a
 rassoc = λp.λa.Y (λr.λl.l (λh.λt.λf.(p (cdr h)) h (r t)) false) a
+lookup = λp.λa.cdr (assoc p a)
