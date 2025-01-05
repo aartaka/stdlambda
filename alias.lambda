@@ -59,7 +59,6 @@ rest = cdr
 append = concat
 mapconcat = concatmap
 mappend = concatmap
-remove = filter
 any = some
 every = all
 repeat = replicate
