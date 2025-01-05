@@ -65,6 +65,8 @@ every = all
 repeat = replicate
 mem = find
 unit = singleton
+init = butlast
+len = length
 
 1+ = succ
 ++ = succ
