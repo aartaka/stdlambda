@@ -38,7 +38,7 @@ Sources of inspiration and code:
 * Format
 The format is the single-letter single-argument lambdas. The approximate regex would be:
 #+begin_src
-.* = (λ[a-z].)*.*
+.* = (λ[a-z]\.)*.*
 #+end_src
 Not all function applications are enclosed into parentheses and not all applications are single-argument. Example:
 #+begin_src 
