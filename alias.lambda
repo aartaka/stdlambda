@@ -24,6 +24,7 @@ dup = W
 drop = true
 
 constantly = true
+comp = complement
 
 ⊤ = true
 ⊥ = false
