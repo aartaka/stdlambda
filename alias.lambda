@@ -68,6 +68,7 @@ unit = singleton
 init = butlast
 len = length
 drop = nthcdr
+make = replicate
 
 1+ = succ
 ++ = succ
