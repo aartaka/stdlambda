@@ -25,7 +25,7 @@ Sources of inspiration and code:
   - ~bool.lambda~ :: Boolean ops, no deps.
   - ~numbers.lambda~ :: Numeric, arithmetics. Depends on ~combinators.lambda~ and ~bool.lambda~.
   - ~cons.lambda~ :: Conses. Depends on ~bool.lambda~.
-  - ~list.lambda~ :: Linked lists and utils for them. Mostly fold operations. Depends on ~cons.lambda~, ~numbers.lambda~ and ~combinators.lambda~.
+  - ~list.lambda~ :: Linked lists and utils for them. Mostly fold operations. Depends on ~cons.lambda~, ~numbers.lambda~, ~combinators.lambda~, ~bool.lambda~.
   - ~alist.lambda~ :: Associative (key-value) lists. Depends on ~cons.lambda~ and ~combinators.lambda~.
   - ~stack.lambda~ :: Operations/combinators from stack languages.
   - ~alias.lambda~ :: Aliases for all of the above.
