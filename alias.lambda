@@ -63,6 +63,7 @@ mapconcat = concatmap
 mappend = concatmap
 any = some
 contains = some
+elem = some
 every = all
 repeat = replicate
 mem = find
