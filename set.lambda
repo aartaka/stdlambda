@@ -1,0 +1,4 @@
+deduplicate = λp.λl.foldr (λe.λa.if (some (λx.p x e) a) a (cons e a)) nil l
+difference = λp.λa.λb.remove (λe.(some (λx.p x e) b)) a
+intersection = λp.λa.λb.filter (λe.(some (λx.p x e) b)) a
+union = λp.λa.λb.deduplicate p (concat a b)

@@ -26,6 +26,7 @@ Sources of inspiration and code:
   - ~numbers.lambda~ :: Numeric, arithmetics. Depends on ~combinators.lambda~ and ~bool.lambda~.
   - ~cons.lambda~ :: Conses. Depends on ~bool.lambda~.
   - ~list.lambda~ :: Linked lists and utils for them. Mostly fold operations. Depends on ~cons.lambda~, ~numbers.lambda~, ~combinators.lambda~, ~bool.lambda~.
+    - ~set.lambda~ :: Operations on lists-as-sets. Depends on ~list.lambda~ and its transitive dependencies.
   - ~alist.lambda~ :: Associative (key-value) lists. Depends on ~cons.lambda~ and ~combinators.lambda~.
   - ~alias.lambda~ :: Aliases for all of the above.
 - Run the code using these primitives. Say

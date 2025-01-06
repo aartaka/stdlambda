@@ -21,10 +21,6 @@ rotatel = λl.rcons (cdr l) (car l)
 rotater = λl.cons (last l) (butlast l)
 take = λn.λl.Y (λr.λl.if (eq n (length l)) l (r (butlast l))) l
 split = λn.λl.(cons (take n l) (singleton (nthcdr n l)))
-deduplicate = λp.λl.foldr (λe.λa.if (some (λx.p x e) a) a (cons e a)) nil l
-difference = λp.λa.λb.remove (λe.(some (λx.p x e) b)) a
-intersection = λp.λa.λb.filter (λe.(some (λx.p x e) b)) a
-union = λp.λa.λb.deduplicate p (concat a b)
 unzip = λl.(cons (map car l) (singleton (map cadr l)))
 
 sorted = λl.foldr (λe.λa.(cons (and (car a) (leq e (cdr a))) e)) (cons true (last l)) (butlast l)
