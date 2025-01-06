@@ -52,6 +52,7 @@ comp = complement
 Ɔ = impl
 ⟹ = impl
 ⊃ = impl
+ifthenelse = if
 
 pair = cons
 head = car

@@ -9,7 +9,6 @@ nor = λp.λq.(not (or p q))
 xnor = λp.λq.(not (xor p q))
 mux = λp.λq.λs.(or (and p (not s)) (and q s))
 impl = λp.λq.(or (not p) q)
-ifthenelse = λb.λt.λe.b t e
 if = λb.λt.λe.b t e
 
 complement = λp.λb.(not (p b))
