@@ -21,6 +21,7 @@ rotatel = λl.rcons (cdr l) (car l)
 rotater = λl.cons (last l) (butlast l)
 take = λn.λl.Y (λr.λl.if (eq n (length l)) l (r (butlast l))) l
 split = λn.λl.(cons (take n l) (singleton (nthcdr n l)))
+unzip = λl.(cons (map car l) (singleton (map cadr l)))
 
 sorted = λl.foldr (λe.λa.(cons (and (car a) (leq e (cdr a))) e)) (cons true (last l)) (butlast l)
 
