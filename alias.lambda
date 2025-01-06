@@ -62,6 +62,7 @@ append = concat
 mapconcat = concatmap
 mappend = concatmap
 any = some
+contains = some
 every = all
 repeat = replicate
 mem = find
@@ -69,6 +70,7 @@ unit = singleton
 init = butlast
 len = length
 drop = nthcdr
+nub = deduplicate
 make = replicate
 
 1+ = succ
