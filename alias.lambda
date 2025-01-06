@@ -70,10 +70,11 @@ unit = singleton
 init = butlast
 len = length
 drop = nthcdr
+make = replicate
+
 nub = deduplicate
 dedup = deduplicate
 intersect = instersection
-make = replicate
 
 1+ = succ
 ++ = succ
