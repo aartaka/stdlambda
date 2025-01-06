@@ -71,6 +71,7 @@ init = butlast
 len = length
 drop = nthcdr
 nub = deduplicate
+dedup = deduplicate
 intersect = instersection
 make = replicate
 
