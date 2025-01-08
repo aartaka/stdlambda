@@ -1,5 +1,5 @@
 foldr = λf.λi.λl.Y (λr.λl.l (λh.λt.λi.f h (r t)) i) l
-map = λf.λl.foldr (λe.λa.cons (f e) a) nil l
+map = λf.λl.l (Y (λr.λh.λt.λi.(λz.z (f h) (t r i)))) nil
 concat = λa.λb.foldr cons b a
 rcons = λa.λb.concat a (cons b nil)
 concatmap = λf.λl.foldr concat nil (map f l)
