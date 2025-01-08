@@ -62,6 +62,7 @@ append = concat
 mapconcat = concatmap
 mappend = concatmap
 any = some
+notany = none
 contains = some
 elem = some
 every = all
