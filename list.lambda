@@ -22,8 +22,8 @@ rotater = λl.cons (last l) (butlast l)
 take = λn.λl.Y (λr.λl.if (eq n (length l)) l (r (butlast l))) l
 split = λn.λl.(cons (take n l) (singleton (nthcdr n l)))
 unzip = λl.(cons (map car l) (singleton (map cadr l)))
-
-sorted = λl.foldr (λe.λa.(cons (and (car a) (leq e (cdr a))) e)) (cons true (last l)) (butlast l)
+%sortmerge = λl.λp.λx.l (Y (λr.λh.λt.λx.if (p h (car x)) (cons h (t r x)) (cons (car x) (cons h t)))) (cons x nil)
+sort = λp.λl.foldr (λe.λa.%sortmerge a p e) nil l
 
 dip = λx.λl.(nth 0 l) x
 rep = λl.(nth 0 l) (nth 0 l)
