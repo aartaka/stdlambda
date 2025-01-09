@@ -21,7 +21,6 @@ swap = C
 uni = B
 bi = N
 dup = W
-drop = true
 
 constantly = true
 comp = complement
