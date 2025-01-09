@@ -58,6 +58,9 @@ pair = cons
 head = car
 tail = cdr
 rest = cdr
+empty = null
+empty? = null
+
 append = concat
 mapconcat = concatmap
 mappend = concatmap
@@ -71,6 +74,7 @@ mem = find
 unit = singleton
 init = butlast
 len = length
+count = length
 drop = nthcdr
 make = replicate
 interleave = zip
