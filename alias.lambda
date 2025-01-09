@@ -58,7 +58,9 @@ head = car
 tail = cdr
 rest = cdr
 empty = null
+emptyp = null
 empty? = null
+null? = null
 
 append = concat
 mapconcat = concatmap
