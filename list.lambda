@@ -10,6 +10,7 @@ reverse = λl.l (Y (λr.λh.λt.λi.t r (λz.z h i))) nil
 some = λf.λl.foldr or false (map f l)
 all = λf.λl.foldr and true (map f l)
 none = λf.λl.(not (some f l))
+notevery = λf.λl.(not (all f l))
 find = λp.λl.foldr (λe.λa.if (p e) e a) nil l
 unfoldr = λf.λi.λt.Y (λr.λx.if (t x) nil (cons x (r (f x)))) i
 iota = λn.unfoldr succ 0 (eq n)
