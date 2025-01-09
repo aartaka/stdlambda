@@ -6,6 +6,7 @@ null = λp.p (λh.λt.λx.false) true
 nthcdr = λn.λl.(n cdr) l
 nth = λn.λl.car (nthcdr l)
 singleton = λe.(cons e nil)
+tuple = λa.λb.cons a (cons b nil)
 
 caar = λl.car (car l)
 cadr = λl.car (cdr l)
