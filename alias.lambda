@@ -80,6 +80,7 @@ drop = nthcdr
 make = replicate
 interleave = zip
 zipmap = zip
+pairlis = zip
 
 nub = deduplicate
 set = deduplicate
