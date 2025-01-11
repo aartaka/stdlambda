@@ -24,7 +24,7 @@ take = λn.λl.Y (λr.λl.if (eq n (length l)) l (r (butlast l))) l
 takewhile = λp.λl.Y (λr.λl.if (p (car l)) (cons (car l) (r (cdr l))) nil) l
 dropwhile = λp.λl.Y (λr.λl.if (p (car l)) (r (cdr l)) l) l
 split = λn.λl.(cons (take n l) (nthcdr n l))
-unzip = λl.(cons (map car l) (singleton (map cadr l)))
+unzip = λl.(cons (map car l) (singleton (map cdr l)))
 zip = λa.λb.a (Y (λr.λh.λt.λb.(cons (cons h (car b)) (t r (cdr b))))) b
 juxt = λf.λg.λx.(cons (f x) (g x))
 
