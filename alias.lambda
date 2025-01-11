@@ -29,6 +29,7 @@ comp = complement
 ⊥ = false
 ∧ = and
 & = and
+| = or
 ∨ = or
 ¬ = not
 ⫟ = not
@@ -40,6 +41,7 @@ comp = complement
 ↓ = nor
 ⊙ = xnor
 <-> = xnor
+bool= = xnor
 ↔ = xnor
 ⇔ = xnor
 ⬄ = xnor
@@ -52,6 +54,7 @@ comp = complement
 ⟹ = impl
 ⊃ = impl
 ifthenelse = if
+? = if
 
 pair = cons
 head = car
@@ -63,6 +66,7 @@ empty? = null
 null? = null
 
 append = concat
+.. = concat
 mapconcat = concatmap
 mappend = concatmap
 any = some
@@ -110,6 +114,8 @@ zero? = iszero
 ≤ = leq
 <= = leq
 = = eq
+int= = eq
+char= = eq
 ≡ = eq
 < = lt
 > = gt
