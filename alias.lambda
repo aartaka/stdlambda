@@ -107,6 +107,7 @@ inc = succ
 decf = pred
 dec = pred
 - = sub
+minux = sub
 is0 = iszero
 zerop = iszero
 zero? = iszero
