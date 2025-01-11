@@ -25,6 +25,7 @@ geq = λm.λn.leq n m
 
 div = λn.λd.Y (λr.λq.(lt q d) 0 (succ (r (sub q d)))) n
 mod = λn.λd.(sub n (mult d (div n d)))
+log = λn.λb.Y (λr.λx.(eq x b) 1 (succ (r (div x b)))) n
 
 min = λm.λn.(lt m n) m n
 max = λm.λn.(lt m n) n m
