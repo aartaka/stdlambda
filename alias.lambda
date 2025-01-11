@@ -86,6 +86,8 @@ interleave = zip
 zipmap = zip
 pairlis = zip
 
+values = vals
+
 nub = deduplicate
 set = deduplicate
 dedup = deduplicate

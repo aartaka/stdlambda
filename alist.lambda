@@ -2,3 +2,5 @@ acons = λk.λv.λa.cons (cons k v) a
 assoc = λp.λa.Y (λr.λl.l (λh.λt.λf.(p (car h)) h (r t)) false) a
 rassoc = λp.λa.Y (λr.λl.l (λh.λt.λf.(p (cdr h)) h (r t)) false) a
 lookup = λp.λa.cdr (assoc p a)
+keys = λa.a (Y (λr.λh.λt.λi.(cons (car h) (t r i)))) nil
+vals = λa.a (Y (λr.λh.λt.λi.(cons (cdr h) (t r i)))) nil
