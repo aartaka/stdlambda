@@ -10,7 +10,7 @@
 9 = λf.λx.f (f (f (f (f (f (f (f (f x))))))))
 
 succ = λn.λf.λx.f (n f x)
-plus = λm.λn.λf.λx.m f (n f x)
+add = λm.λn.λf.λx.m f (n f x)
 mult = λm.λn.λf.m (n f)
 pow = λb.λe.e b
 pred = λn.λf.λx.n (λg.λh.h (g f)) (λu.x) (λu.u)
