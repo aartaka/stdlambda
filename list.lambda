@@ -16,6 +16,7 @@ unfoldr = λf.λi.λt.Y (λr.λx.if (t x) nil (cons x (r (f x)))) i
 iota = λn.unfoldr succ 0 (eq n)
 mapiota = λf.λn.map f (iota n)
 replicate = λn.λe.mapiota (λx.e) n
+range = λs.λe.mapiota (add s) (sub e s)
 last = λl.Y (λr.λl.if (null (cdr l)) (car l) (r (cdr l))) l
 butlast = λl.Y (λr.λl.if (null (cdr l)) nil (cons (car l) (r (cdr l)))) l
 rotatel = λl.rcons (cdr l) (car l)
