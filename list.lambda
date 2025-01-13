@@ -26,6 +26,7 @@ dropwhile = λp.λl.Y (λr.λl.if (p (car l)) (r (cdr l)) l) l
 split = λn.λl.(cons (take n l) (nthcdr n l))
 unzip = λl.(cons (map car l) (singleton (map cdr l)))
 zip = λa.λb.a (Y (λr.λh.λt.λb.(cons (cons h (car b)) (t r (cdr b))))) b
+ipairs = λl.zip (iota (length l)) l
 juxt = λf.λg.λx.(cons (f x) (g x))
 
 %sortmerge = λl.λp.λx.l (Y (λr.λh.λt.λx.if (p h (car x)) (cons h (t r x)) (cons (car x) (cons h t)))) (cons x nil)
