@@ -85,6 +85,8 @@ make = replicate
 interleave = zip
 zipmap = zip
 pairlis = zip
+string= = equal
+list= = equal
 
 values = vals
 
