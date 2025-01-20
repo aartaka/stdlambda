@@ -34,6 +34,7 @@ comp = complement
 ¬ = not
 ⫟ = not
 ~ = not
+false? = not
 ⊻ = xor
 ⊕ = xor
 ⩛ = xor
@@ -64,6 +65,7 @@ empty = null
 emptyp = null
 empty? = null
 null? = null
+nil? = null
 
 append = concat
 .. = concat
