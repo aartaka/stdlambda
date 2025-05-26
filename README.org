@@ -13,6 +13,9 @@ Calculus. Included are:
 - Church Pairs (with an opinionated ~nil = false~) and Haskell/Lisp-inspired utilities on them.
   - nil = ~λx.true~ pairs might be provided in the future.
 
+Note that stdlambda is mostly deprecated by [[https://github.com/aartaka/lamber][Lamber and its extensive standard library]].
+Also note that the code is slightly more readable there, having multi-letter variables &c.
+
 Sources of inspiration and code:
 - [[http://www.golfscript.com/lam/][Universal Lambda page]].
 - Justine Tunney's [[https://justine.lol/lambda/][SectorLambda page]].
